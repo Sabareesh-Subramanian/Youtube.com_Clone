@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15vh;
+  padding: 1.5%;
+  border-bottom: 1px dotted lightgrey;
+}
+#navbar span {
+  color: white;
+}
+#navbar img {
+  padding: 0;
+  margin-top: -3%;
+  width: 10%;
+  margin-left: 1.5%;
+}
+#navbar input {
+  background-color: black;
+  height: 50%;
+  width: 30%;
+  margin-left: 15%;
+  color: white;
+}
+#searchdiv {
+  background-color: gray;
+  width: 4%;
+  height: 50%;
+  text-align: center;
+  padding-top: 0.2%;
+  cursor: pointer;
+}
+#displaydiv {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(4, 20%);
+  row-gap: 4%;
+  column-gap: 4%;
+  padding-left: 5%;
+}
