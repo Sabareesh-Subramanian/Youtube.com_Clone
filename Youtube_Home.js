@@ -27,9 +27,9 @@ AppendVideos = ({ items: VideoArray }) => {
 };
 
 async function AppendPopularVideos() {
-  // https://youtube.googleapis.com/youtube/v3/videos?chart=mostPopular&regionCode=India&key=AIzaSyCtSA0qoOkvjb9vyCjkevfJsayqb8hHaIw&maxResults=30
+  let apikey = ""; // enter your YouTube API key here
   let res1 = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?q=Indiapopularvideos&key=AIzaSyCtSA0qoOkvjb9vyCjkevfJsayqb8hHaIw&maxResults=30`
+    `https://youtube.googleapis.com/youtube/v3/search?q=Indiapopularvideos&key=${apikey}&maxResults=30`
   );
   let res2 = await res1.json();
   console.log(res2);
